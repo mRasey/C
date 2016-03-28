@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1448285645 source:d:\code\c\data_struct\main.c
+	<stdio.h>
+	<math.h>
+
+1446534941 source:d:\code\c\data_struct\ÅĞ¶ÏºóĞò.c
+	<stdio.h>
+	<stdlib.h>
+
+1446525228 source:d:\code\c\data_struct\ÕÒÇ°Ğò.c
+	<stdio.h>
+	<stdlib.h>
+
+1446533710 source:d:\code\c\data_struct\¹ş·òÂüÊ÷.c
+	<stdio.h>
+	<stdlib.h>
+
+1446603391 source:d:\code\c\data_struct\input.c
+	<stdio.h>
+
