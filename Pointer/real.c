@@ -44,7 +44,7 @@ bool judge(char* s) {
     return true;
 }
 
-int main() {
+int real() {
     char input[20];
     scanf("%s", input);
     char now = input[0];
