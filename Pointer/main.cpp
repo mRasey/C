@@ -4,6 +4,11 @@
 
 using namespace std;
 
+typedef struct {
+    int id;
+    string name;
+} Student;
+
 void foo2(void (*func)(string), string s) {
     func(s);
 }
@@ -30,12 +35,6 @@ int inner(int a, int b) {
 
 int (*outter())(int, int) {
     return inner;
-}
-
-int main() {
-    int (*a)(int, int) = outter();
-    cout << a(2, 3) << endl;
-    return 0;
 }
 
 
