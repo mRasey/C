@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <mem.h>
 #include <malloc.h>
+#include <string.h>
 
 char* sub_string(char* s, int start, int end) {
     char* temp = (char*) malloc(sizeof(char) * (end - start + 1));
@@ -21,28 +21,28 @@ char* reverse(char* s) {
     return temp;
 }
 
-int invertsub() {
+int main() {
     char s[50], t[50];
     char* sub_str;
     int i = 0;
     FILE *in, *out;
-    in = fopen("invertsub.in", "r");
-    out = fopen("invertsub.out", "w");
-    fgets(s, 1024, in);
-    fgets(t, 1024, in);
+    in = fopen("C:\\Users\\Billy\\Desktop\\123\\invertsub.in", "r");
+    out = fopen("C:\\Users\\Billy\\Desktop\\123\\invertsub.out", "w");
+    fgets(s, 50, in);
+    fgets(t, 50, in);
     for(i = 0; i < strlen(s); i++) {
         if(s[i] == t[0]) {
             sub_str = sub_string(s, i, strlen(t) + i);
             if(strcmp(sub_str, t) == 0) {
                 fputs(strcat(strcat(sub_string(s, 0, i), reverse(sub_str)),
                                     sub_string(s, strlen(t) + 2, strlen(s))), out);
-                fclose(in);
                 fclose(out);
+                fclose(in);
                 return 0;
             }
         }
     }
-    fclose(in);
     fclose(out);
+    fclose(in);
     return 0;
 }

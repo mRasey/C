@@ -12,7 +12,7 @@ typedef struct {
 } Point;
 
 Point points[1000000];
-int prz() {
+int main() {
     int length = 0;
     int start, end;
     int i = 0;
