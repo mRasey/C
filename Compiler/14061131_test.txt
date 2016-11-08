@@ -1,4 +1,4 @@
-const int x = 0;
+const int x;
 const char y = 'b';
 int z;
 char m;
